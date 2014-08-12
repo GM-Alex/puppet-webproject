@@ -1,0 +1,20 @@
+<?php
+$this->dbType       = 'mysql';
+$this->dbHost       = '127.0.0.1'; 			                 // database host name
+$this->dbName       = '<%= @name %>'; 		                 // database name
+$this->dbUser       = '<%= @name %>'; 				         // database user name
+$this->dbPwd        = '<%= @name %>';				         // database user password
+$this->sShopURL     = 'http://<%= @name %>';		         // eShop base url, required
+//$this->sSSLShopURL  = 'https://<%= @name %>';                // eShop SSL url, optional
+//$this->sAdminSSLURL = 'https://<%= @name %>/admin';          // eShop Admin SSL url, optional
+$this->sShopDir     = '<%= @project_dir %>';
+$this->sCompileDir  = '<%= @project_dir %>/tmp';
+<% if @project_config != "" -%>
+<% if @project_config.is_a? Array -%>
+<% @project_config.each do |value| -%>
+<%= value %>
+<% end %>
+<% else -%>
+<%= @project_config %>
+<% end -%>
+<% end -%>

@@ -1,0 +1,16 @@
+{
+  "description": "Puppet module to set up an web project.",
+  "summary": "UNKNOWN",
+  "source": "UNKNOWN",
+  "version": "1.0.0",
+  "author": "Jankowfsky AG - Alexander Schneider",
+  "dependencies": [
+
+  ],
+  "types": [
+
+  ],
+  "project_page": "UNKNOWN",
+  "license": "Apache License, Version 2.0",
+  "name": "webproject"
+}
